@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Card de Produto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="cardImage">
+                <img src="sofa.png" class="sofaImage" id="sofaImage">
+                <img src="sofa.gif" class="sofaGif" id="sofaGif">
+                <img src="icon-360.svg" onclick="changeImageToGif()" class="icon360" id="icon360">
+                <img src="icon-close.svg" onclick="changeGifToImage()" class="iconClose" id="iconClose">
+            </div>
+            <div class="cardText">
+                <p class="productCode">CODIGO: 42404</p>
+                <p class="productName">Sofá Margot II - Rosé</p>
+                <p class="productPrice">R$ 4.000</p>
+                <a href="#" class="btn">ADICIONAR À CESTA</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImageToGif() {
+            document.getElementById("icon360").style.display = "none";
+            document.getElementById("iconClose").style.display = "initial";
+            document.getElementById("sofaImage").style.display = "none";
+            document.getElementById("sofaGif").style.display = "initial";
+        }
+        function changeGifToImage() {
+            document.getElementById("iconClose").style.display = "none";
+            document.getElementById("icon360").style.display = "initial";
+            document.getElementById("sofaImage").style.display = "initial";
+            document.getElementById("sofaGif").style.display = "none";
+        }
+    </script>
+</body>
+</html>

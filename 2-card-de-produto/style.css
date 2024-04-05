@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body {
+    background-color: #fff;
+}
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #D9CDF7;
+    width: 54rem;
+    height: 31.125rem;
+    margin-top: 10rem;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.cardImage {
+    position: relative;
+}
+.sofaGif{
+    display: none;
+    width: 449px;
+}
+.icon360, .iconClose {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+.iconClose {
+    right: 40px;
+    display: none;
+}
+.cardText {
+    line-height: 2rem;
+    color: #271A45;
+}
+.productCode {
+    font-size: 10px;
+    font-weight: 300;
+}
+.productName {
+    font-family: "Crimson Pro", serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+.productPrice {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+.btn {
+    width: 9.25px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: #271A45;
+    border: 1px solid #271A45;
+    border-radius: 50px;
+}
